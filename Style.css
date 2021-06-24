@@ -55,7 +55,7 @@ section.contacto-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	text-align: center;	
+	
 }
 
 h1.title{
@@ -66,12 +66,22 @@ h1.title{
 	margin-bottom: 50px;
 }
 
+div.boton{
+	text-align: center;
+	margin-bottom:50px ;	
+}
+
 a.boton-contacto{
 	background-color: #ffda31 ;
 	color: #033a74 ;
 	text-decoration: none;
 	padding-left: 35px;
 	padding-right: 35px;	
+}
+
+div.white-grid{
+	background-color: white;
+	color:black;
 }
 
 img.image-contact{
@@ -85,13 +95,17 @@ section.container-somos{
 	height: 100%;
 }
 
+div.lo-que-somos{
+
+}
+
 h3.trititle{
 	text-align: center;
 }
 
 img.trabajador{
-	width: 30px;
-	height: 29px;
+	width: 80px;
+	height: 80px;
 }
 
 
