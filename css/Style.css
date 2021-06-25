@@ -122,19 +122,12 @@ section.nuestros-mercados{
 	background: #F9F9F9;
 }
 
-div.contrys-container{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-}
-div.contry-list{
-	display: flex;
+
+img.mapa{
+	width: 100%;
+	height: 100%;
 
 }
-
 
 footer{
 	background-color: #033A74;
