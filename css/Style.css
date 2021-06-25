@@ -9,10 +9,13 @@ header{
 	background: #033a74 ;
 	width: 100%;
 	height: 100%;
-	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
 	margin: 0%;
-
 }
+
+
 div.menu-container{
 	background: #033a74 ;
 	
@@ -115,7 +118,7 @@ section.nuestros-productos{
 	color: white;
 	background: #333333;
 	width: 100%;
-	height: 200px;
+	height: 100%;
 }
 
 section.nuestros-mercados{
