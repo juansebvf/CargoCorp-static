@@ -1,7 +1,9 @@
 html, body{
-	background: #f9f9f9;
+	background: white;
 }
-
+strong{
+	text-transform: uppercase;
+}
 h2, h3{
    margin:0%;
 }
@@ -24,8 +26,6 @@ header{
 
 div.menu-container{
 	background: #033a74 ;
-
-	
 }
 
 img.logo{
@@ -50,23 +50,20 @@ a.white-leter{
 }
 
 section.contacto-container{
-	background: #033a74 ;
+	background:  #033a74 ;
+	position: relative;
 	color: white;
 	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	height: 500px;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 27px;
 	text-align: center;
-	padding-top: 100px;
-
+	padding-top: 60px;
+	overflow: hidden;
 }
-	
 
 h1.title{	
 	margin-top: 90px;
@@ -111,6 +108,7 @@ div.top-text{
 	font-size: 14px;
 }
 section.container-somos{
+	background: #F9F9F9;
 	width: 100%;
 	height: 100%;
 }
@@ -127,7 +125,7 @@ div.lo-que-somos{
 
 
 h3.trititle{
-
+	position:relative;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -135,6 +133,15 @@ h3.trititle{
 	font-weight: 300;
 	font-size: 14px;
 	transform: translateY(-100px);
+}
+h3.trititle::after{
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border-bottom:0.5px solid #000000;
 }
 
 h2.subtitle-somos{
@@ -182,9 +189,12 @@ h3.nuestros{
 	color: white;
 	text-align: center;
 	transform: translateY(-20px);
+	
 }
 h3.nuestros::after{
-
+	content: ""; 
+	border-style:solid
+	border-bottom: ;
 }
 
 div.white-backgraund{
@@ -246,21 +256,25 @@ div.mercados-text{
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 24px;
-	opacity: .1;
+	line-height: 24px
 }
-h3.mercados{
-	text-align: left;
-}
+
 
 img.mapa{
 	width: 100%;
 	height: auto;
 
 }
-aside.noticias{
-	background-color: white;
+section.noticias{
+	background: #ffffff;
+	padding-top: 200000px;
+
 }
+
+div.grey-backgraund{
+	background: #F9F9F9;
+}
+
 img.contenedor{
 	width: 100%;
 	height: 100%;
@@ -298,14 +312,52 @@ a.noticias-link{
 	font-size: 16px;
 	line-height: 24px;
 }
+a.bottom-button{
+	border: 1px solid #033A74;
+	color: #033A74;
+	text-align: center;
+
+}
 footer{
 	background-color: #033A74;
 	color: white;
-	height: 100%;
+	height: 100px;
 	width: 100%;
-	
+	text-align:;
 }
 
 p.Copyright{
 	margin: 0px;
 }
+
+
+
+
+
+
+
+
+
+/*
+section.contacto-container::after{
+	content: '';
+	position: absolute;
+	height: 0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0;
+	background: white;
+	border-top: 0px solid transparent;
+	border-left:  var(--container-width) solid cyan;
+	border-bottom: 150px solid transparent;
+}
+
+	content: '';
+	position: absolute;
+	background: bisque;
+	top: 0;
+	bottom: ;
+	
+}
+*/

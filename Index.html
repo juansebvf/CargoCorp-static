@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href = "https: //fonts.googleapis.com/css2? family = Open + Sans: wght @ 300 & display = swap "rel =" stylesheet ">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/Style.css">
@@ -102,10 +105,12 @@
 	</section>
 		
 	<section class="container-somos">
-		<div class="lo-que-somos">
-			<h3 class="trititle" >
-				Lo que somos
-			</h3>
+		<div class="lo-que-somos ">
+			<div class="d-flex justify-content-center">
+				<h3 class="trititle d-flex">
+					Lo que somos
+				</h3>
+			</div>
 			<h2 class="subtitle-somos"> 
 				Una reaseguradora diseñada para ayudarte
 			</h2>
@@ -117,11 +122,11 @@
 	</section>
 		
 	<section class="la-diferencia">
-
-		<h3 class="trititle">
-			La diferencia
-		</h3>
-
+		<div class="d-flex justify-content-center">
+			<h3 class="trititle d-inline-flex">
+				La diferencia
+			</h3>
+		</div>
 		<div class="container">
 			<div class="row justify-content-center diferencia-text">
 				<div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-4 mb-5">
@@ -230,9 +235,11 @@
 				Nuestros productos
 			</h3>
 		</div>
+
 		<div class="container">
-			<div class="row justify-content-center productos-text">
-				<div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-3 mr-3 ml-3 mb-3 white-backgraund ">
+
+			<div class="your-class">
+				<div class="white-backgraund ">
 					<figure>
 						<img src="img/barco.png" alt="#" class="barco">
 					</figure>
@@ -244,7 +251,8 @@
 					</p>
 					<a href="#" class="ml-3 mr-3 saber-link">Saber más</a>
 				</div>
-			  	<div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-3 mr-3 ml-3 mb-3 white-backgraund ">
+
+				<div class="white-backgraund ">
 					<figure>
 						<img src="img/barco.png" alt="#" class="barco">
 					</figure>
@@ -256,7 +264,8 @@
 					</p>
 					<a href="#" class="ml-3 mr-3 saber-link">Saber más</a>
 				</div>
-			  	<div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-3 mr-3 ml-3 mb-3 white-backgraund ">
+		
+				<div class="white-backgraund ">
 					<figure>
 						<img src="img/barco.png" alt="#" class="barco">
 					</figure>
@@ -279,9 +288,11 @@
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-1 col-lg-5 col-xl-5"></div>
 				<div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-7">
-					<h3 class="trititle mercados">
-						Nuestros mercados
-					</h3>
+					<div class="d-flex justify-content-center" >
+						<h3 class="trititle mercados d-flex">
+							Nuestros mercados
+						</h3>
+					</div>
 				</div>
 			</div>
 			<div class="contrys-container ">
@@ -343,74 +354,74 @@
 		</div>
 	</section>
 	
-
-	<aside class="Noticias">
+	<section class="Noticias">
 		<h3 class="trititle">
 			Noticias de interés
 		</h3>
-
 		<div class="container">
 			<div class="row">
-			  <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 align-self-center">
-				<div class="">
-					<img class="mr-3 align-self-center" src="img/contenedores.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<p class="noticias-fecha">
-							16 de junio 2021
-						</p>
-					  	<h5 class="mt-0 noticias-title">
-							Perdida de contenedores en el mar se ha incrementado este año
-						</h5>
-						<p class= "noticias-text">
-							En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
-						</p>
-					    <a href="#" class="noticias-link">Leer más</a>
+				<div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5 align-self-center mb-5 grey-backgraund justify-content-center">
+					<div class=" align-self-center">
+						<img class="mr-3 align-self-center" src="img/contenedores.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<p class="noticias-fecha mt-2">
+								16 de junio 2021
+							</p>
+							<h5 class="mt-0 noticias-title">
+								Perdida de contenedores en el mar se ha incrementado este año
+							</h5>
+							<p class= "noticias-text">
+								En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
+							</p>
+							<a href="#" class="noticias-link">Leer más</a>
+						</div>
 					</div>
 				</div>
-			  </div>
-			  <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6">
-				<div class="row">
-					<div class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-12">
+				<div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 justify-content-center">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-5 grey-backgraund">
 
-						<div class="media">
-							<img class="align-self-center mr-3" src="img/contenedores.png" alt="Generic placeholder image">
-							<div class="media-body noticias-text">
-								<p class="noticias-fecha">
-									16 de Junio 2021
-								</p>
-								  <h5 class="mt-0 noticias-title">
-									Perdida de contenedores en el mar se ha incrementado este año
-								</h5>
-								<p class= "noticias-text">
-									En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
-								</p> 
-								<a href="#" class="noticias-link">Leer más</a>
+							<div class="media">
+								<img class="align-self-center mr-3" src="img/contenedores.png" alt="Generic placeholder image">
+								<div class="media-body noticias-text">
+									<p class="noticias-fecha mt-2">
+										16 de Junio 2021
+									</p>
+									<h5 class="mt-0 noticias-title">
+										Perdida de contenedores en el mar se ha incrementado este año
+									</h5>
+									<p class= "noticias-text">
+										En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
+									</p> 
+									<a href="#" class="noticias-link">Leer más</a>
+								</div>
 							</div>
 						</div>
-
-					</div>
-					<div class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-12">
-						<div class="media">
-							<img class="align-self-center mr-3" src="img/contenedores.png" alt="Generic placeholder image">
-							<div class="media-body noticias-title">
-								<p class="noticias-fecha">
-									16 de Junio 2021
-								</p>
-								  <h5 class="mt-0 noticias-text">
-									Perdida de contenedores en el mar se ha incrementado este año
-								</h5>
-								<p class= "noticias-text">
-									En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
-								</p> 
-								<a href="#" class="noticias-link">Leer más</a>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-5 grey-backgraund">
+							<div class="media">
+								<img class="align-self-center mr-3" src="img/contenedores.png" alt="Generic placeholder image">
+								<div class="media-body noticias-title">
+									<p class="noticias-fecha mt-2">
+										16 de Junio 2021
+									</p>
+									<h5 class="mt-0 noticias-text">
+										Perdida de contenedores en el mar se ha incrementado este año
+									</h5>
+									<p class= "noticias-text">
+										En el primer Q del 2021 se han perdido 1.127 contenedores de transporte marítimo, estimando una perdida en mercancía equivalente a unos 54 millones de dólares aproximadamente.
+									</p> 
+									<a href="#" class="noticias-link">Leer más</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</aside>
+		
+		<a href="#" class="bottom-button">Ver todas las noticias</a> 
 
+	</section>
 	<footer>
 		<p class="Copyright">
 		Copyright © 2012 CargoCorp Uderwriters|All Right Reserved
@@ -418,9 +429,11 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/main.js">
+	</script> 
 </body>
 </html>
 
