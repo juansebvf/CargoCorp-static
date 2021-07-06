@@ -38,8 +38,6 @@ div.menu-container{
 
 img.logo{
 	margin-left: 100px;
-	width: 145px;
-	height: 50px;
 }
 
 ul.menu{
@@ -48,6 +46,7 @@ ul.menu{
 
 
 a.white-leter{
+	position: relative;
 	color: white;
 	margin-top: 0px;
 	margin-left: 18px ;
@@ -57,8 +56,9 @@ a.white-leter{
 	text-decoration: none;
 }
 a.white-leter:hover{
+	position: relative;
 	border-bottom: 2px solid #FFDA31;
-	bottom: 0;
+	bottom:0;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -72,13 +72,10 @@ section.contacto-container{
 	height: 300px;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
-	font-size: 1px;
-	line-height: 27px;
 	text-align: center;
 	padding-top: 60px;
-	font-weight: 500;
 	padding-bottom: 200px;
-	z-index: 1;
+	z-index: 10;
 }
 
 section.contacto-container:after {
@@ -97,18 +94,20 @@ section.contacto-container:after {
 h1.title{
 	font-family: 'Open Sans', sans-serif;
 	color: white;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 40px;
+
 }
 strong{
 	font-weight:bolder;
 }
 div.boton{
 	text-align: center;
-	margin-top: 95px;
+	margin-top: 60px;
 	margin-bottom:70px;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 22px;	
 }
@@ -127,14 +126,13 @@ a.boton-contacto{
 div.white-grid{
 	background-color: white;
 	color:black;
-	max-width: 70%;
-	transform:translateY(-10px) ;
+	max-width: 54%;
+	height: auto;
+	padding-top: 20px;
+	transform:translateY(-10px);
+	z-index: 10;
 }
 
-img.image-contact{
-	width: 60px;
-	height: 60px;
-}
 div.top-text{
 	text-align: left;
 	font-style: normal;
@@ -152,8 +150,8 @@ section.container-somos{
 div.lo-que-somos{
 	text-align: center;
 	align-items: center;
-	margin-left: 25%;
-	margin-right:25%;
+	margin-left: 20%;
+	margin-right:20%;
 
 }
 
@@ -161,18 +159,19 @@ div.lo-que-somos{
 
 h3.trititle{
 	position:relative;
+	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
 	transform: translateY(-100px);
 }
 h3.trititle::after{
 	content: "";
 	position: absolute;
-	top: 18px;
+	top: 26px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
@@ -189,10 +188,14 @@ h2.subtitle-somos{
 }
 
 p.text-cobertura{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
 	transform: translateY(30px);
 }
 span{
-	font-weight: bold;
+	font-weight: 600;
 }
 section.la-diferencia{
 	background-color: white;
@@ -206,11 +209,6 @@ div.diferencia-text{
 	font-weight: 300;
 	font-size: 14px;	
 }
-img.trabajador{
-	width: 80px;
-	height: 80px;
-}
-
 
 section.nuestros-productos{
 	color: white;
@@ -222,15 +220,14 @@ section.nuestros-productos{
 }
 h3.nuestros{
 	color: white;
-	text-align: center;
 	transform: translateY(-20px);
-	
+	z-index: 10;
 }
 h3.nuestros::after{
 	content: ""; 
 	top: 0;
-	bottom: 0;
-	right: 1;
+	bottom: 9px;
+	right: 0;
 	left: 0;
 	border-bottom: 0.5px solid #FFFFFF;
 }
@@ -240,8 +237,19 @@ div.white-backgraund{
 	color: black;
 	padding: 0%;
 	padding-bottom: 20px;
+	border-radius: 5px;
 }
-
+p.title-p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+p.text-p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
 img.barco{
 	width: 100%;
 	height: auto;
@@ -262,7 +270,7 @@ div.productos-text{
 	font-size: 16px;
 	line-height: 24px;	
 }
-a.saber-link{
+a.slide-link{
 	color:#333333;
 	text-decoration: underline;
 	font-family: 'Open Sans', sans-serif;
@@ -356,49 +364,25 @@ a.noticias-link{
 }
 div.buttom-noticias{
 	text-align: center;
+	margin-top: 60px;
 }
 a.bottom-button{
 	border: 1px solid #033A74;
 	color: #033A74;
 	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 }
 footer{
 	background-color: #033A74;
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	font-weight: 700;
+	font-size: 18px;
+	padding-left: 120px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-section.contacto-container::after{
-	content: '';
-	position: absolute;
-	height: 0px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 0;
-	background: white;
-	border-top: 0px solid transparent;
-	border-left:  var(--container-width) solid cyan;
-	border-bottom: 150px solid transparent;
-}
-
-	content: '';
-	position: absolute;
-	background: bisque;
-	top: 0;
-	bottom: ;
-	
-}
-*/
