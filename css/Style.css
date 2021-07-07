@@ -1,6 +1,7 @@
 html, body{
 	background: #ffffff;
 	padding: 0%;
+	font-style: normal;
 }
 strong{
 	text-transform: uppercase;
@@ -23,9 +24,6 @@ header{
 	background: #033a74 ;
 	width: 100%;
 	height: 100%;
-	font-size: 0.2rem;
-	font-style: normal;
-	font-weight: 600;
 	margin: 0%;
 	font-family: 'Open Sans', sans-serif;
 	
@@ -41,27 +39,33 @@ img.logo{
 }
 
 ul.menu{
+	margin-top: 10px;
 	margin-right: 100px;
 }
-
+li.nav-item{
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 a.white-leter{
 	position: relative;
 	color: white;
-	margin-top: 0px;
 	margin-left: 18px ;
 	margin-right: 18px ;
 	font-family: 'Open Sans', sans-serif;
-	font-size: small;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
 	text-decoration: none;
 }
 a.white-leter:hover{
 	position: relative;
-	border-bottom: 2px solid #FFDA31;
+	border-bottom: 3px solid #FFDA31;
 	bottom:0;
 	top: 0;
 	right: 0;
 	left: 0;
+	padding-bottom: 2px;
 }
 
 section.contacto-container{
@@ -75,7 +79,7 @@ section.contacto-container{
 	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 200px;
-	z-index: 10;
+	overflow: hidden;
 }
 
 section.contacto-container:after {
@@ -155,8 +159,6 @@ div.lo-que-somos{
 
 }
 
-
-
 h3.trititle{
 	position:relative;
 	color: #000000;
@@ -202,42 +204,15 @@ section.la-diferencia{
 	padding-top: 200px;
 	padding-bottom: 130px;
 }
-div.diferencia-text{
+div.grid-diferencia{
 	color:#333333;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;	
 }
-
-section.nuestros-productos{
-	color: white;
-	background: #333333;
-	width: 100%;
-	height: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-h3.nuestros{
-	color: white;
-	transform: translateY(-20px);
-	z-index: 10;
-}
-h3.nuestros::after{
-	content: ""; 
-	top: 0;
-	bottom: 9px;
-	right: 0;
-	left: 0;
-	border-bottom: 0.5px solid #FFFFFF;
-}
-
-div.white-backgraund{
-	background-color: white;
-	color: black;
-	padding: 0%;
-	padding-bottom: 20px;
-	border-radius: 5px;
+div.text-d{
+	margin-left: 15px;
 }
 p.title-p{
 	font-family: 'Open Sans', sans-serif;
@@ -250,35 +225,61 @@ p.text-p{
 	font-weight: 300;
 	font-size: 14px;
 }
-img.barco{
+section.nuestros-productos{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: #333333;
+	width: 100%;
+	height: 100%;
+	padding-top: 140px;
+	padding-bottom: 80px;
+}
+h3.nuestros{
+	color: white;
+	transform: translateY(-50px);
+	font-weight: 700;
+}
+h3.nuestros::after{
+	content: ""; 
+	top: 0;
+	bottom: 9px;
+	right: 0;
+	left: 0;
+	border-bottom: 0.5px solid #FFFFFF;
+} 
+
+div.white-backgraund{
+	width: 80%;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
+img.image-slide{
 	width: 100%;
 	height: auto;
 }
-
 p.title-slide{
 	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: bold;
 	font-size: 24px;
+	font-weight: 700;
 	line-height: 33px;
-	margin-bottom: 10px;
+	padding-bottom: 20px;
+
 }
-div.productos-text{
+p.text-slide{
 	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: 300;
 	font-size: 16px;
-	line-height: 24px;	
+	font-weight: 300;
+	line-height: 24px;
+	padding-bottom: 20px;
 }
 a.slide-link{
 	color:#333333;
 	text-decoration: underline;
 	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: 600;
 	font-size: 16px;
+	font-weight: 600;
 	line-height: 24px;
-
 }
 section.nuestros-mercados{
 	background: #F9F9F9;
@@ -300,12 +301,18 @@ div.mercados-text{
 	color:#333333;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
+}
+li.country{
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 24px
 }
-
-
+li.mexico{
+	padding-top: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+}
 img.mapa{
 	width: 100%;
 	height: auto;
@@ -321,21 +328,12 @@ section.noticias{
 div.grey-backgraund{
 	background: #F9F9F9;
 }
-
 img.contenedor{
 	width: 100%;
 	height: 100%;
 }
-h5.noticias-title{
-	color: #333333;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 25px;
-}
-div.aling{
-	vertical-align: middle;
+div.news-text{
+	padding-bottom: 60px;
 }
 p.noticias-fecha{
 	color: #333333;
@@ -344,6 +342,16 @@ p.noticias-fecha{
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 24px;
+	padding-bottom: 15px;
+}
+h5.noticias-title{
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	padding-bottom: 15px;
 }
 p.noticias-text{
 	font-family: 'Open Sans', sans-serif;
@@ -351,7 +359,11 @@ p.noticias-text{
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 24px
+	line-height: 27px;
+	padding-bottom: 15px;
+}
+div.aling{
+	vertical-align: middle;
 }
 a.noticias-link{
 	color: #333333;
@@ -361,6 +373,7 @@ a.noticias-link{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
+	padding-bottom: 30px;
 }
 div.buttom-noticias{
 	text-align: center;
