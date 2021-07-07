@@ -1,7 +1,12 @@
 html, body{
 	background: #ffffff;
-	padding: 0%;
 	font-style: normal;
+
+	overflow-x: hidden;
+}
+body{
+	position:relative;
+	z-index: -10000;
 }
 strong{
 	text-transform: uppercase;
@@ -15,6 +20,10 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
 	margin: 0%;
+}
+figure{
+	margin: 0%;
+	padding: 0%;
 }
 ul{
 	list-style: none;
@@ -65,7 +74,7 @@ a.white-leter:hover{
 	top: 0;
 	right: 0;
 	left: 0;
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 }
 
 section.contacto-container{
@@ -73,13 +82,13 @@ section.contacto-container{
 	position: relative;
 	color: white;
 	width: 100%;
-	height: 300px;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	text-align: center;
-	padding-top: 60px;
-	padding-bottom: 200px;
-	overflow: hidden;
+	padding-top: 90px;
+	overflow-x: hidden;
+	z-index: 1000;
 }
 
 section.contacto-container:after {
@@ -91,9 +100,8 @@ section.contacto-container:after {
 	border-top: 0px solid transparent;
 	border-left: 6000px solid  #033a74;
 	border-bottom: 300px solid  #F9F9F9;
+	transform:translateY(0px);
 	z-index: -10;
-	transform:translateY(58px);
-	
 }
 h1.title{
 	font-family: 'Open Sans', sans-serif;
@@ -119,24 +127,33 @@ div.boton{
 a.boton-contacto{
 	background-color: #ffda31 ;
 	color: #033a74 ;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
 	text-decoration: none;
-	padding-top: 6px;
-	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-bottom: 10px;
 	padding-left: 50px;
 	padding-right: 55px;
 
 }
 
 div.white-grid{
+	position: relative;
 	background-color: white;
 	color:black;
 	max-width: 54%;
 	height: auto;
-	padding-top: 20px;
-	transform:translateY(-10px);
-	z-index: 10;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transform:translateY(0px);
+	z-index: 10000;
 }
-
 div.top-text{
 	text-align: left;
 	font-style: normal;
@@ -144,11 +161,13 @@ div.top-text{
 	font-size: 14px;
 }
 section.container-somos{
+	position: relative;
 	background: #F9F9F9;
 	width: 100%;
 	height: 100%;
 	padding-bottom: 200px;
 	padding-top: 200px;
+	z-index:-1000;
 }
 
 div.lo-que-somos{
@@ -175,8 +194,8 @@ h3.trititle::after{
 	position: absolute;
 	top: 26px;
 	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	left: 2px;
+	right: 2px;
 	border-bottom:0.5px solid #000000;
 }
 
@@ -188,7 +207,6 @@ h2.subtitle-somos{
 	color: #333333;
 	transform: translateY(-30px);
 }
-
 p.text-cobertura{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -210,6 +228,9 @@ div.grid-diferencia{
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;	
+}
+div.image-c{
+	margin-right: 100px;
 }
 div.text-d{
 	margin-left: 15px;
@@ -234,20 +255,30 @@ section.nuestros-productos{
 	padding-top: 140px;
 	padding-bottom: 80px;
 }
-h3.nuestros{
+h3.nuestros.trititle::after{
+	content: none;
+}
+h3#nuestros{
 	color: white;
 	transform: translateY(-50px);
 	font-weight: 700;
 }
-h3.nuestros::after{
-	content: ""; 
+h3#nuestros::after, h3#nuestros::before{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 2px;
+	background: white;
 	top: 0;
-	bottom: 9px;
-	right: 0;
-	left: 0;
-	border-bottom: 0.5px solid #FFFFFF;
 } 
-
+h3#nuestros::after{
+	content: "";
+	right: 600px;
+}
+h3#nuestros::before{
+	content: "";
+	left: 500px;
+}
 div.white-backgraund{
 	width: 80%;
 	background-color: white;
@@ -328,12 +359,15 @@ section.noticias{
 div.grey-backgraund{
 	background: #F9F9F9;
 }
-img.contenedor{
-	width: 100%;
-	height: 100%;
+img.image-news{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
 }
 div.news-text{
 	padding-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 p.noticias-fecha{
 	color: #333333;
