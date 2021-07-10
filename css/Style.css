@@ -1,3 +1,4 @@
+/*Estilos generales*/
 html, body{
 	background: #ffffff;
 	font-style: normal;
@@ -28,7 +29,7 @@ ul{
 	list-style: none;
 	padding: 0%;
 }
-
+/*Estilos pagina home*/
 header{
 	background: #033a74 ;
 	width: 100%;
@@ -468,7 +469,55 @@ footer{
 	padding-left: 10px;
 	text-align: center;
 }
+/*Estilos pagina News*/
+section.filtro{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+h2.f-title{
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+div.button-container{
+	text-align: center;
+}
+a.buttom-fil{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #023A74;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+a.buttom-fil:hover{
+	border: 1px solid  #023A74;
+}
 
+section.boletin{
+	background: #F9F9F9;
+	padding-top: 200px;
+	padding-bottom: 80px;
+}
+section.siniestros{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+section.todas-las-noticias{
+padding-bottom: 150px;
+}
+
+
+/*Estilos @media*/
 @media (min-width: 576px) {
 	img.logo{
 		margin-top: 10px;
