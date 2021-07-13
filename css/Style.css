@@ -158,6 +158,9 @@ div.white-grid{
 	transform:translateY(0px);
 	z-index: 10000;
 }
+div.display-c{
+	display: flex !important;
+}
 img.image-c{
 	width: 72px;
 	height: 49px;
@@ -185,6 +188,7 @@ div.lo-que-somos{
 
 h3.trititle{
 	position:relative;
+	display: flex !important;
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
@@ -397,7 +401,7 @@ div.grey-background{
 	background: #F9F9F9;
 }
 img.image-news{
-	width: 250px;
+	width: 100%;
 	height: 250px;
 	object-fit: cover;
 }
@@ -517,6 +521,7 @@ section.boletin{
 }
 div.pseudo-lines{
 	position: relative;
+	display: flex !important;
 	width: 100%;
 }
 h3.boletin-title{
@@ -560,6 +565,9 @@ section.siniestros{
 	padding-bottom: 200px;
 	scroll-behavior: smooth;
 }
+.block-d >.d-flex{
+	display: block !important;
+}
 section.todas-las-noticias{
 padding-bottom: 150px;
 }
@@ -579,7 +587,6 @@ padding-bottom: 150px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
 }
 
 @media (min-width: 768px) { 
@@ -640,6 +647,9 @@ padding-bottom: 150px;
 	section.noticias{
 		padding-bottom: 125px;
 	}
+	img.image-news{
+		width: 250px;
+	}
 	section.nuestros-mercados{
 		padding-bottom: 150px;
 	}
@@ -657,6 +667,13 @@ padding-bottom: 150px;
 		text-align: left;
 		font-size: 18px;
 		padding-left: 120px;
+	}
+	div.p-desktop{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.block-d >.d-flex{
+		display: flex !important;
 	}
 }
 
@@ -701,6 +718,9 @@ padding-bottom: 150px;
 	section.noticias{
 		padding-bottom: 125px;
 	}
+	img.image-news{
+		width: 250px;
+	}
 	section.nuestros-mercados{
 		padding-bottom: 150px;
 	}
@@ -719,5 +739,12 @@ padding-bottom: 150px;
 		text-align: left;
 		font-size: 18px;
 		padding-left: 120px;
+	}
+	div.p-desktop{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.block-d >.d-flex{
+		display: flex !important;
 	}
 }
