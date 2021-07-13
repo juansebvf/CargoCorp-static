@@ -467,14 +467,17 @@ footer{
 	text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 376px) {
 	img.logo{
 		margin-top: 10px;
 		margin-left: 30px;
 		margin-bottom: 10px;
 	}
 	.navbar-toggler{
-		margin-right:10px;
+		margin-right:10px !important;
+	}
+	div.white-grid{
+		padding-bottom: 0px !important;
 	}
 	h3.title-n{
 		padding-left: 20px;
@@ -516,6 +519,9 @@ footer{
 	}
 	div.top-box{
 		margin-bottom: 0px !important;
+	}
+	div.white-grid{
+		padding-bottom: 20px !important;
 	}
 	section.container-somos{
 		padding-bottom: 200px;
@@ -577,6 +583,7 @@ footer{
 	}
 	div.white-grid{
 		max-width: 54%;
+		padding-bottom: 20px !important;
 	}
 	div.top-box{
 		margin-bottom: 0px !important;
