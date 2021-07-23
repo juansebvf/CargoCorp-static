@@ -609,6 +609,10 @@ section.our-team{
 div.team-slide{
 	background-color:  #F9F9F9;
 }
+div.paddings{
+	margin-left: 200px;
+	margin-right: 200px;
+}
 p.team-member-name{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
