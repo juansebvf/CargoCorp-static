@@ -389,26 +389,71 @@ li.mexico{
 img.mapa{
 	width: 100%;
 	height: auto;
-
 }
+/*section news*/
+#featured {
+	display: grid;
+	grid-template: "A ." "A ."/35% 65%;
+	grid-gap: 1rem;
+	grid-auto-rows: minmax(400px, auto);
+  }
+  
+  .featured-news {
+	background:  #F9F9F9;
+	display: flex;
+	overflow: hidden;
+  }
+  .featured-news:first-child {
+	flex-direction: column;
+	grid-area: A;
+  }
+  .featured-news:first-child .picture-container {
+	height: 250px;
+	overflow: hidden;
+  }
+  .featured-news:first-child figure {
+	width: 100%;
+  }
+  .featured-news:first-child figure img {
+	width: 100%;
+	min-height: 200px;
+	object-fit: cover;
+  }
+  .featured-news:hover img {
+	transform: scale(1.3) rotate(-10deg);
+  }
+  .featured-news .summary {
+	background: #F9F9F9;
+	padding: 1rem;
+  }
+  .featured-news .summary .short-text {
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+  }
+  .featured-news figure {
+	margin: 0;
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+  }
+  .featured-news figure img {
+	max-height: 275px;
+	transition: 0.25s ease-in-out;
+  }
+
+
 section.noticias{
 	background: #ffffff;
 	padding-top: 200px;
 	padding-bottom: 100px;
 }
 
-div.grey-background{
-	background: #F9F9F9;
-}
 img.image-news{
 	width: 100%;
 	height: 250px;
 	object-fit: cover;
-}
-div.news-text{
-	padding-bottom: 40px;
-	padding-left: 15px;
-	padding-right: 15px;
 }
 p.noticias-fecha{
 	color: #333333;
@@ -419,7 +464,7 @@ p.noticias-fecha{
 	line-height: 24px;
 	padding-bottom: 15px;
 }
-h5.noticias-title{
+h3.noticias-title{
 	color: #333333;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
@@ -448,7 +493,6 @@ a.noticias-link{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
-	padding-bottom: 30px;
 }
 div.buttom-noticias{
 	text-align: center;
@@ -465,6 +509,7 @@ a.bottom-button{
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 }
+
                                        /*Estilos de news-article*/
 
 figure.background-image{
