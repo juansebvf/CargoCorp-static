@@ -553,7 +553,7 @@ footer{
 	padding-left: 10px;
 	text-align: center;
 }
-                                /* styes for abut-us*/
+                                /* styes for about-us*/
 section.container-top-icons{
 background:  #033a74 ;
 position: relative;
@@ -641,8 +641,19 @@ a.team-member-email{
 section.contact-us{
 	padding-bottom: 100px;
 }
-div.contact-col{
-	padding-left: 130px;
+h3#translate{
+	transform: translateY(-60px);
+}
+
+div.contact-information{
+	padding-bottom: 40px;
+}
+p.contact-title{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #333333;
+	padding-bottom: 20px;
 }
 p.contact-text{
 	font-family: 'Open Sans', sans-serif;	
@@ -687,6 +698,12 @@ p.contact-text{
 	h3.title-n{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	div.contact-col{
+		padding-left: 130px;
+	}
+	div#movil-style{
+		justify-content: left !important;
 	}
 }
 
@@ -751,7 +768,12 @@ p.contact-text{
 	div#justify-left{
 		justify-content: left !important;
 	}
-
+	div#movil-style{
+		justify-content: left !important;
+	}
+	div.contact-col{
+		padding-left: 130px;
+	}
 	footer{
 		text-align: left;
 		font-size: 18px;
@@ -820,6 +842,12 @@ p.contact-text{
 	}
 	div#justify-left{
 		justify-content: left !important;
+	}
+	div#movil-style{
+		justify-content: left !important;
+	}
+	div.contact-col{
+		padding-left: 130px;
 	}
 	footer{
 		text-align: left;
