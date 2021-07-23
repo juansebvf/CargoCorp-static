@@ -532,6 +532,7 @@ div#transparent-grid{
 h3#aside-title{
 	transform:translateY(-40px);
 }
+
 /*styles our-products*/
 section.about-product{
 	background-color:  #F9F9F9;
@@ -544,6 +545,7 @@ h3#transform-title{
 div.container-products{
 	margin-left: 19%;
 	margin-right: 19%;
+
 }
 h2#about-title{
 	font-family: 'Open Sans', sans-serif;
@@ -552,6 +554,7 @@ h2#about-title{
 	font-size: 24px;
 	line-height: 33px;
 	padding-bottom: 30px;
+
 }
 p#about-text{
 	font-family: 'Open Sans', sans-serif;
@@ -590,6 +593,114 @@ footer{
 	padding-left: 10px;
 	text-align: center;
 }
+                                /* styes for about-us*/
+section.container-top-icons{
+background:  #033a74 ;
+position: relative;
+font-family: 'Open Sans', sans-serif;
+color: white;
+width: 100%;
+height: 230px;
+font-style: normal;
+text-align: center;
+padding-top: 90px;
+z-index: -5;
+}
+section.container-top-icons:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-top: 0px solid transparent;
+	border-left: 6000px solid  #033a74;
+	border-bottom: 300px solid  #F9F9F9;
+	transform:translateY(0px);
+	z-index: -10;
+}
+
+section.about-us{
+	padding-top: 200px;
+	padding-bottom: 100px;
+	background-color:  #F9F9F9;
+}
+h2.about-us-title{
+  	padding-bottom: 30px;
+}
+p.about-us-text{
+	color: #333333;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 23%;
+	padding-right: 23%;
+}
+section.our-team{
+	padding-top: 150px;
+	padding-bottom: 200px;
+}
+div.team-slide{
+	background-color:  #F9F9F9;
+}
+div.paddings{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+p.team-member-name{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #333333;
+}
+p.team-member-ocupation{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+}
+p.team-member-description{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
+a.team-member-email{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: underline;
+	color: #333333;
+}
+section.contact-us{
+	padding-bottom: 100px;
+}
+h3#translate{
+	transform: translateY(-60px);
+}
+
+div.contact-information{
+	padding-bottom: 40px;
+}
+p.contact-title{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #333333;
+	padding-bottom: 20px;
+}
+p.contact-text{
+	font-family: 'Open Sans', sans-serif;	
+	color: #333333;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+
                                    /*Estilos pagina News*/
 
 section.filtro{
@@ -597,6 +708,8 @@ section.filtro{
 	padding-bottom: 50px;
 }
 h2.f-title{
+  
+
 	font-family: 'Open Sans', sans-serif;
 	color: #333333;
 	font-weight: bold;
@@ -688,7 +801,6 @@ padding-bottom: 80px;
 
                                         /*Estilos @media*/
 @media (min-width: 476px) {
-
 	img.logo{
 		margin-top: 10px;
 		margin-left: 30px;
@@ -727,6 +839,13 @@ padding-bottom: 80px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	div.contact-col{
+		padding-left: 130px;
+	}
+	div#movil-style{
+		justify-content: left !important;
+
 	div.content-left{
 		justify-content: left !important;
   }
@@ -734,6 +853,7 @@ padding-bottom: 80px;
 	h3.boletin-title{
 		padding-left: 10px;
 		padding-right: 10px;
+
 
 	}
 }
@@ -803,9 +923,18 @@ padding-bottom: 80px;
 	div#justify-left{
 		justify-content: left !important;
 	}
+
+	div#movil-style{
+		justify-content: left !important;
+	}
+	div.contact-col{
+		padding-left: 130px;
+	}
+
 	div.content-left{
 		justify-content: left !important;
 	}
+
 	footer{
 		text-align: left;
 		font-size: 18px;
@@ -895,9 +1024,18 @@ padding-bottom: 80px;
 	div#justify-left{
 		justify-content: left !important;
 	}
+
+	div#movil-style{
+		justify-content: left !important;
+	}
+	div.contact-col{
+		padding-left: 130px;
+	}
+
 	div.content-left{
 		justify-content: left !important;
 	}
+
 	footer{
 		text-align: left;
 		font-size: 18px;
