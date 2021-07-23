@@ -468,6 +468,33 @@ figure.background-image{
 section.article-container{
 	padding-top: 20px;
 	padding-bottom: 20px;
+	font-size: 16px;
+}
+div#social-media-conteiner{
+	border-left: 1px solid #48a8ee;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div.icons-conteiner{
+	margin-left: 30px;
+}
+p#social-media{
+	font-family: 'Open Sans', sans-serif;
+	color: #3173a8;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+div.social-media-icons{
+	margin-bottom: 20px;
+	width: 30px;
+    height: 30px;
+	border: 1px solid #4181b6;
+	border-radius: 50%;
+}
+div#email-icon{
+	border: 1px solid #262626;
 }
 h1.article-title{
 	color: #333333;
@@ -497,7 +524,6 @@ div#transparent-grid{
 }
 h3#aside-title{
 	transform:translateY(-40px);
-
 }
 
 footer{
