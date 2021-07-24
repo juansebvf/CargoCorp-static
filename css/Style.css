@@ -520,7 +520,7 @@ a.bottom-button{
 figure.background-image{
 	width: 100%;
 	height: auto;
-	padding-top: 100px;
+	padding-bottom: 100px;
 }
 section.article-container{
 	padding-top: 20px;
@@ -529,6 +529,7 @@ section.article-container{
 }
 div#social-media-conteiner{
 	border-left: 1px solid #48a8ee;
+	margin-top: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -643,7 +644,7 @@ footer{
 	padding-left: 10px;
 	text-align: center;
 }
-                                /* styes for about-us*/
+                                /* styles for about-us*/
 section.container-top-icons{
 background:  #033a74 ;
 position: relative;
@@ -668,7 +669,9 @@ section.container-top-icons:after {
 	transform:translateY(0px);
 	z-index: -10;
 }
-
+div#grid-about-us{
+	transform: translateY(20px);
+}
 section.about-us{
 	padding-top: 200px;
 	padding-bottom: 100px;
@@ -692,10 +695,21 @@ section.our-team{
 }
 div.team-slide{
 	background-color:  #F9F9F9;
+	padding: 25px;
 }
 div.paddings{
 	margin-left: 200px;
 	margin-right: 200px;
+}
+.our-team-slide>.slick-next{
+	right: 150px !important;
+	background: black !important;
+	border-radius: 50% !important;
+}
+.our-team-slide>.slick-prev{
+	left: 150px !important;
+	background: black !important;
+	border-radius: 50% !important;
 }
 p.team-member-name{
 	font-family: 'Open Sans', sans-serif;
@@ -703,6 +717,7 @@ p.team-member-name{
 	font-size: 18px;
 	line-height: 25px;
 	color: #333333;
+	padding-bottom: 10px;
 }
 p.team-member-ocupation{
 	font-family: 'Open Sans', sans-serif;
@@ -710,6 +725,8 @@ p.team-member-ocupation{
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 p.team-member-description{
 	font-family: 'Open Sans', sans-serif;
@@ -717,6 +734,8 @@ p.team-member-description{
 	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 a.team-member-email{
 	font-family: 'Open Sans', sans-serif;
@@ -725,6 +744,7 @@ a.team-member-email{
 	line-height: 24px;
 	text-decoration: underline;
 	color: #333333;
+	padding-top: 10px;
 }
 section.contact-us{
 	padding-bottom: 100px;
